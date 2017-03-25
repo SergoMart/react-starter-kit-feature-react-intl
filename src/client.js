@@ -15,6 +15,7 @@ import queryString from 'query-string';
 import { createPath } from 'history/PathUtils';
 import { addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
+import ru from 'react-intl/locale-data/ru';
 import cs from 'react-intl/locale-data/cs';
 import history from './core/history';
 import App from './components/App';
@@ -25,7 +26,7 @@ import createApolloClient from './core/createApolloClient';
 
 const apolloClient = createApolloClient();
 
-[en, cs].forEach(addLocaleData);
+[en, ru, cs].forEach(addLocaleData);
 
 const store = configureStore(window.APP_STATE, { history, apolloClient });
 // Global (context) variables that can be easily accessed from any React component

@@ -7,6 +7,7 @@ import { setLocale } from '../../actions/intl';
 function LanguageSwitcher({ currentLocale, availableLocales, setLocale }) {
   const isSelected = locale => locale === currentLocale;
   const localeDict = {
+    'ru-RU': 'Русский',
     'en-US': 'English',
     'cs-CZ': 'Česky',
   };

@@ -19,11 +19,13 @@ if (!global.Intl) {
     'intl',
     'intl/locale-data/jsonp/en.js',
     'intl/locale-data/jsonp/cs.js',
+    'intl/locale-data/jsonp/ru.js',
   ], (require) => {
     // and require them here
     require('intl');
     require('intl/locale-data/jsonp/en.js');
     require('intl/locale-data/jsonp/cs.js');
+    require('intl/locale-data/jsonp/ru.js');
 
     run();
   }, 'polyfills');
