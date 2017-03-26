@@ -9,7 +9,7 @@ function LanguageSwitcher({ currentLocale, availableLocales, setLocale }) {
   const localeDict = {
     'ru-RU': 'Русский',
     'en-US': 'English',
-    'cs-CZ': 'Česky',
+    // 'cs-CZ': 'Česky',
   };
   const localeName = locale => localeDict[locale] || locale;
   return (
